@@ -327,7 +327,11 @@ async function uaf_ssv(fsets, index, index2) {
       i = num_reuses - 1;
     }
   }
-
+   // MAY I ASK FOR TRY / CATCH here in order to get more information on error occuring 8.52 after 1st Exploit which runs ~100% at first attempt? 
+   // Afterwards I get always following except I clear anything
+   // Unhandeled rejection
+  //DieError.failed SerializedScriptValue UAF
+  //Die Error@utils.mjs 22:10, 28:21 async Function Psfree.mjs 332:8
   if (res.length !== 2) {
     die("failed SerializedScriptValue UAF");
   }
